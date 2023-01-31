@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8A8A8"
+    tools:context=".Auth.SignIn">
+
+    <ImageView
+        android:id="@+id/bg_auth_main"
+        android:layout_width="490dp"
+        android:layout_height="900dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502"
+        app:srcCompat="@drawable/bg_auth_main" />
+
+    <ImageView
+        android:id="@+id/bg_auth_shadow"
+        android:layout_width="500dp"
+        android:layout_height="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_auth_shadow" />
+
+    <EditText
+        android:id="@+id/signin_et_login"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="276dp"
+        android:background="@drawable/form_input_login"
+        android:ems="10"
+        android:hint="@string/signin_username"
+        android:inputType="textPersonName"
+        android:paddingLeft="65dp"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signin_et_password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/form_input_password"
+        android:ems="10"
+        android:hint="@string/signin_password"
+        android:inputType="textPassword"
+        android:paddingLeft="65dp"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="@+id/signin_et_login"
+        app:layout_constraintStart_toStartOf="@+id/signin_et_login"
+        app:layout_constraintTop_toBottomOf="@+id/signin_et_login" />
+
+    <Button
+        android:id="@+id/signin_btn_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:text="@string/signin_forgot"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/signin_et_password"
+        app:layout_constraintStart_toStartOf="@+id/signin_et_password"
+        app:layout_constraintTop_toBottomOf="@+id/signin_et_password" />
+
+    <Button
+        android:id="@+id/signin_btn_auth"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#4254BC"
+        android:text="@string/signin_btn_auth"
+        android:textAllCaps="true"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/signin_btn_forgot"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/signin_btn_forgot"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn_forgot" />
+
+    <Button
+        android:id="@+id/signin_btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:text="@string/signin_btn_register"
+        android:textAllCaps="false"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/signin_btn_auth"
+        app:layout_constraintStart_toStartOf="@+id/signin_btn_auth"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn_auth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
