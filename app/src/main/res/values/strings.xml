@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">taxiapp_wear</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    # Sign in
+    <string name="signin_username">Username</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_remember">Remember</string>
+    <string name="signin_auth">Sign in</string>
+
+    # Profile Sync
+    <string name="profile_username">Ivanov Ivan</string>
+    <string name="profile_time">15 hours</string>
+    <string name="profile_sum">$1500</string>
+    <string name="profile_drive">Drive</string>
+    <string name="profile_paid">Paid</string>
+    <string name="profile_btn_sync">Sync</string>
+    <string name="profile_exit">Exit</string>
+
+    # Driver Timer
+    <string name="driver_name">Driver timer</string>
+    <string name="driver_stop">Stop</string>
+    <string name="driver_timer">00:00:00</string>
+</resources>

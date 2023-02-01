@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3043"
+    tools:context=".ProfileSync">
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/profile_username"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/profile_time"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/profile_username"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <TextView
+        android:id="@+id/profile_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/profile_sum"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/profile_username"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <TextView
+        android:id="@+id/profile_drive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_drive"
+        android:textColor="#a8a8a8"
+        app:layout_constraintEnd_toEndOf="@+id/profile_time"
+        app:layout_constraintStart_toStartOf="@+id/profile_time"
+        app:layout_constraintTop_toBottomOf="@+id/profile_time" />
+
+    <TextView
+        android:id="@+id/profile_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_paid"
+        android:textColor="#a8a8a8"
+        app:layout_constraintEnd_toEndOf="@+id/profile_sum"
+        app:layout_constraintStart_toStartOf="@+id/profile_sum"
+        app:layout_constraintTop_toBottomOf="@+id/profile_sum" />
+
+    <Button
+        android:id="@+id/profile_btn_sync"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#ffb900"
+        android:text="@string/profile_btn_sync"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <Button
+        android:id="@+id/profile_btn_exit"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="@string/profile_exit"
+        android:textAllCaps="false"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_btn_sync"
+        app:layout_constraintStart_toStartOf="@+id/profile_btn_sync"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn_sync" />
+</androidx.constraintlayout.widget.ConstraintLayout>
